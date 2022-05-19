@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>변수선언자</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script>
+        /*
+            var
+            -> ES6 이전 변수를 선언할 수 있는 키워드
+            -> 변수의 중복선언이 가능
+        */
+        var x = 5; // 변수 x에 5를 저장
+        var y = 6; // 변수 y에 6을 저장
+        var z = x + y; // 변수 z에 x + y (11)이 저장
+        console.log("x : ", x);
+        console.log("y : ", y);
+        console.log("z : ", z);
+
+        var x = 7; // 중복 선언
+        z = x + y; // 이미 선언된 변수에 새로운 값을 할당
+        console.log("중복 선언 된 x : ", x);
+        console.log("y : ", y);
+        console.log("재할당 된 z : ", z);
+
+        console.log("==============================");
+
+        /*
+            let
+            -> ES6 이후 변수를 선언할 수 있는 키워드
+            -> 변수의 중복선언 불가, 재할당 가능
+        */
+        let x1 = 5; // 변수 x1에 5를 저장
+        let y1 = 6; // 변수 y1에 6을 저장
+        let z1 = x1 + y1; // 변수 z1에 x1 + y1 (11)이 저장
+        console.log("x1 : ", x1);
+        console.log("y1 : ", y1);
+        console.log("z1 : ", z1);
+
+        //let x1 = 7;
+        x1 = 7;
+        console.log("재할당 된 x1 : ", x1);
+
+
+        console.log("==============================");
+        /*
+            const (상수)
+            -> ES6 이후 변수를 선언할 수 있는 키워드
+            -> 변수의 중복선언, 재할당 불가 (반드시 선언과 초기화를 동시에 진행)
+        */
+        const PI = 3.14;
+        // const PI = 2.12;
+        // PI = 2.12;
+        console.log("상수 PI : ", PI);
+    </script>
+</body>
+</html>
