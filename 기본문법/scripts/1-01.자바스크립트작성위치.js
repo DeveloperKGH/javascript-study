@@ -1,0 +1,1 @@
+document.write("javascript JS file 에 위치 <br>")
