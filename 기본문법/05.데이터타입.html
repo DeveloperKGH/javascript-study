@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>데이터타입</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script>
+       // 문자열 String
+        let name = "김건훈";
+        let name2 = 'Beau';
+        let name3 = "내 이름은 \"김건훈\"";
+        let name4 = '내 이름은 "Beau"';
+        let name5 = "내 이름은 'Kim'";
+        let name6 = '내 이름은 \'김\'';
+
+        console.log("name : ", name);
+        console.log("name2 : ", name2);
+        console.log("name3 : ", name3);
+        console.log("name4 : ", name4);
+        console.log("name5 : ", name5);
+        console.log("name6 : ", name6);
+
+       // 문자열 Number
+        let x = 3;
+        let y = 3.14;
+        console.log("x : ", x);
+        console.log("y : ", y);
+
+       // undefined
+        let u1;
+        let u2 = undefined;
+        console.log("u1 : ", u1);
+        console.log("u2 : ", u2);
+
+        // null
+        let n = null;
+        console.log("n : ", n);
+
+        // Object
+        let person1 = {};
+        person1.firstName = "Beau";
+        person1.lastName = "Kim";
+        person1.age = 29;
+
+        let person2 = {
+            firstName : "건훈",
+            lastName : "김",
+            age : 29
+        };
+
+        let person3 = {};
+        person3["firstName"] = "건훈";
+        person3["lastName"] = "Kim";
+        person3["age"] = 29;
+        person3["email"] = "developerkgh@gmail.com";
+
+        console.log("person1 : ", person1);
+        console.log("person2 : ", person2);
+        console.log("person3 : ", person3);
+        console.log("person3_email : ", person3.email);
+
+        // Array
+        let arr1 = ["KIA", "BMW", "Volvo"];
+        console.log(arr1);
+        console.log(arr1[0]);
+        console.log(arr1[1]);
+        console.log(arr1[2]);
+
+        let arr2 = [9, 4, 0, 11, 7];
+        console.log(arr2);
+
+        let arr3 = ["BMW", 7, undefined, person1, null]
+        console.log(arr3);
+
+        let arr4 = [];
+        arr4[0] = 4;
+        arr4[1] = 7;
+        console.log(arr4);
+
+        let arr5 = [];
+        arr5.push("Beau");
+        arr5.push("Kim");
+        console.log(arr5, arr5.length);
+
+       // Boolean (true or false)
+        let isPerson = true;
+        console.log(isPerson);
+
+        let x2 = 5;
+        let y2 = 7;
+        console.log(x2 > y2);
+
+        // 변수 타입 추론
+        console.log(typeof name);
+        console.log(typeof x);
+        console.log(typeof person1);
+        console.log(typeof arr1);
+    </script>
+</body>
+</html>
