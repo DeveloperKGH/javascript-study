@@ -58,7 +58,6 @@
   let a = 100;
   a = 50;
   console.log(a) -> 50
-  ![원시타입 사진1](https://velog.velcdn.com/images%2Fnomadhash%2Fpost%2F5e197937-108e-4f9c-8be8-0c8c04d3fe8e%2F%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-09-16%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%207.02.57.png)
   
   예시2)
   let a = 100;
@@ -66,11 +65,11 @@
   a = 50;
   console.log(a) -> 50
   console.log(b) -> 100
-  ![원시타입 사진2](https://velog.velcdn.com/images%2Fnomadhash%2Fpost%2F4c48d687-2e50-42d0-a72a-28058f114cd1%2F%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-09-18%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%204.01.34.png)
-  
   
   * 참고 사이트 : https://velog.io/@nomadhash/Java-Script-%EA%B9%8A%EC%9D%80-%EB%B3%B5%EC%82%AC%EC%99%80-%EC%96%95%EC%9D%80-%EB%B3%B5%EC%82%AC
 ```
+![primitive1](https://velog.velcdn.com/images%2Fnomadhash%2Fpost%2F5e197937-108e-4f9c-8be8-0c8c04d3fe8e%2F%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-09-16%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%207.02.57.png)
+![primitive2](https://velog.velcdn.com/images%2Fnomadhash%2Fpost%2F4c48d687-2e50-42d0-a72a-28058f114cd1%2F%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-09-18%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%204.01.34.png)
 * Number(숫자) : 64비트 부동소수점 형식으로, 모든 숫자를 실수로 처리하고 연산도 가능
     * let num1 = 7;
     * let num2 = 3.14;
@@ -103,14 +102,13 @@
   let copyArr = myArr;
   myArr.push("hello");
   console.log(copyArr); -> ["hello"]
-  ![참조타입 사진1](https://velog.velcdn.com/images%2Fnomadhash%2Fpost%2Fac894f26-b94a-41f8-990e-8b44c6775d97%2F%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-09-16%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%207.54.37.png)
-  
   
   * 참고 사이트 : https://velog.io/@nomadhash/Java-Script-%EA%B9%8A%EC%9D%80-%EB%B3%B5%EC%82%AC%EC%99%80-%EC%96%95%EC%9D%80-%EB%B3%B5%EC%82%AC
 ```
+![reference1](https://velog.velcdn.com/images%2Fnomadhash%2Fpost%2Fac894f26-b94a-41f8-990e-8b44c6775d97%2F%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-09-16%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%207.54.37.png)
 * Object : 객체
   * let person1 = {};
   * let person2 = {firstName : "Beau", lastName : "Kim", age : 29};
-* Array : 배열
+* Array : 배
   * let arr1 = ["KIA", "BMW", "Volvo"];
   * let arr2 = [9, 4, 0, 11, 7];
