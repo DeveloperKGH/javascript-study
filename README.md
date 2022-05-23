@@ -200,3 +200,17 @@ ex)
 ```
 ![==, === 1](https://dhananjay25.files.wordpress.com/2014/03/image8.png)
 ![==, === 2](https://velog.velcdn.com/post-images%2Ffiloscoder%2F8d6f8a80-fa17-11e9-b483-31f82d28ec79%2FabY0g3L700bwp.webp)
+
+## :eyes: Javascript 조건문
+```sh
+* 조건문이란 특정한 조건 아래서만 코드가 실행되게 하는 구문
+* ex) if, else if, else, switch
+```
+* if 문
+  * if (조건) {내용} : 조건이 true 인 경우에 내용이 실행
+* if, else 문
+  * else if 는 조건을 여러개로 하고 싶을 때 사용
+  * else 는 if 조건이 false 일 때 실행
+* switch 문
+  * switch 뒤에 오는 값으로 case 에 해당하는 조건 실행
+  * default 는 어떤 조건에도 해당이 안 될 때 실행

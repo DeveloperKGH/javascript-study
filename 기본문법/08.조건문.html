@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>조건문</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script>
+        // if 문
+        // if (조건) {조건이 참인 경우 해당 블록 실행}
+        let age = 19;
+        if (age > 18) {
+            console.log("당신은 성인입니다.");
+        }
+
+        //if else 문
+        let hour = 14;
+        if (hour < 10) {
+            console.log("Good Morning!");
+        } else if (hour < 18) {
+            console.log("Good Afternoon!");
+        } else if (hour < 21) {
+            console.log("Good Evening!");
+        } else {
+            console.log("Good Night!");
+        }
+
+        // switch 문
+        let day = new Date().getDay();
+        console.log(day);
+        let dayName;
+
+        switch (day) {
+            case 0:
+                dayName = '일요일';
+                break;
+            case 1:
+                dayName = '월요일';
+                break;
+            case 2:
+                dayName = '화요일';
+                break;
+            case 3:
+                dayName = '수요일';
+                break;
+            case 4:
+                dayName = '목요일';
+                break;
+            case 5:
+                dayName = '금요일';
+                break;
+            case 6:
+                dayName = '토요일';
+                break;
+            default:
+                dayName = '';
+                break;
+        }
+
+        console.log(dayName);
+    </script>
+</body>
+</html>
