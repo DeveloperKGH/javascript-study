@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>연산자</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script>
+        let x = 4;
+        let y = 2;
+        let z;
+
+       // + (더하기)
+        z = x + y;
+        console.log("+ : " , z);
+
+        // - (빼기)
+        z = x - y;
+        console.log("- : " , z);
+
+        // * (곱하기)
+        z = x * y;
+        console.log("* : " , z);
+
+        // ** (거듭제곱)
+        z = x ** y;
+        console.log("** : " , z);
+
+        // / (나누기)
+        z = x / y;
+        console.log("/ : " , z);
+
+        // % (나머지)
+        z = x % y;
+        console.log("% : " , z);
+
+        // ++ (1씩 증가)
+        console.log("++ : " , ++x);
+        console.log("++ : " , x++);
+        console.log("++ : " , x);
+
+        // -- (1씩 감소)
+        x--;
+        console.log("-- : " , x);
+
+        // +=, -=, *=, /= (대입 연산자)
+        x += y;
+        console.log("+= : " , x);
+
+        x -= y;
+        console.log("-= : " , x);
+
+        x *= y;
+        console.log("*= : " , x);
+
+        x /= y;
+        console.log("/= : " , x);
+
+        // 문자열 연산자
+        let txt1 = "Beau";
+        let txt2 = "Kim";
+        let txt3 = txt1 + " " + txt2;
+        console.log("txt3 : " , txt3);
+
+        txt1 += txt2;
+        console.log("txt1 : " , txt1);
+
+        // 숫자와 문자
+        x = "2" + 2; // 문자열 '22' 출력
+        console.log("x : " , x);
+
+        // 비교 연산자
+        console.log(1 == 1); // equal to
+        console.log(1 == "1"); // true
+        console.log(1 === "1") // false (타입까지 체크)
+
+        console.log(1 != 3); // true
+        console.log(1 != '1'); // false
+        console.log(1 !== '1'); // true (타입까지 체크)
+
+        console.log(3 > 2); // true
+        console.log(3 < 2); // false
+        console.log(3 >= 2); // true
+        console.log(3 <= 2); // false
+
+        // 논리 연산자
+        console.log(3 > 2 && 1 > 2); // false (조건이 모두 만족해야 true)
+        console.log(3 > 2 || 1 > 2); // true (조건중 하나만 만족하더라도 true)
+        console.log(!(3 > 2)); // false
+        console.log(!(3 < 2)); // true
+
+        // 삼항 연산자
+        y = x >= 77 ? 4 : 2; // (조건 ? 참 : 거짓)
+        console.log(y)
+    </script>
+</body>
+</html>
