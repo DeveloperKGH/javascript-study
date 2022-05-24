@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>반복문</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script>
+        // 반복문 - 조건이 만족하는 동안에 계혹해서 {} 안에 코드를 반복 실행
+        // for (조건) {}
+
+        for (let i = 0; i < 5; i++) {
+            if (i === 3) {
+                // break;
+                continue;
+            }
+            console.log("The number is " + i);
+        }
+
+        let j = 1;
+        let total = 0;
+        for (; j <= 10; j++) {
+            total = total + j;
+        }
+
+        console.log("total : ", total);
+
+        let nums = [17, 23, 5, 39];
+        let len = nums.length
+
+        for (let k = 0; k < len; k++) {
+            console.log(nums[k]);
+        }
+
+        // for - in
+        for (let i in nums) {
+            console.log(nums[i]);
+        }
+
+        let person = {
+            firstName : "Beau",
+            lastName : "Kim",
+            age : 29
+        };
+
+        for (let key in person) {
+            console.log(person[key]);
+        }
+
+        // for - of
+        for (let num of nums) {
+            console.log(num);
+        }
+
+        let cars = ["KIA", "Volvo", "BMW"];
+
+        for (let car of cars) {
+            console.log(car);
+        }
+
+        // while
+        let l = 1;
+        while (l <= 10) {
+            console.log("l : ", l);
+            l++;
+        }
+
+        // do - while : 'do' 블럭의 내용을 선 실행후 조건문 체크
+        let m = 1;
+        do {
+            console.log("m : ", m)
+            m++;
+        } while (m <= 10);
+    </script>
+</body>
+</html>
