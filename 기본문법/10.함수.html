@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>함수</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script>
+        // 함수를 사용하지 않으면, 아래처럼 코드가 반복 되고, 'vat' 값을 바꾸려고 한다면 하나씩 찾아서 바꿔야하는 수고로움 발생
+        let sales = 10;
+        let vat = 0.1;
+        let tax1 = sales * vat;
+        let tax2 = sales * vat;
+        let tax3 = sales * vat;
+        let tax4 = sales * vat;
+        let tax5 = sales * vat;
+
+        // 특정 기능을 수행하도록 작성된 코드 블록
+        // function name () {
+            // 코드
+        // }
+        // name():
+
+        function calcTax (sales) {
+            let vat = 0.1;
+            return sales * vat;
+        }
+        console.log('tax : ', calcTax(10));
+
+        function calculator (x, y, operator) {
+            switch (operator) {
+                case "+" :
+                    return x + y;
+                case "-" :
+                    return x - y;
+                case "*" :
+                    return x * y;
+                case "/" :
+                    return x / y;
+                default :
+                    return "No Such Operator"
+            }
+        }
+        console.log("calculator : ", calculator(9, 3, "+"));
+    </script>
+</body>
+</html>
